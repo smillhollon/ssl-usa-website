@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Summit Sales Leadership</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.jpg" alt="Summit Sales Leadership" />
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Ready to talk? Reach out directly — no forms, no bots.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section">
+    <div class="container contact-card">
+      <div class="contact-info">
+        <h2>Steve Millhollon</h2>
+        <p class="contact-title">Founder, Summit Sales Leadership</p>
+
+        <div class="contact-item">
+          <span class="contact-label">📞 Phone</span>
+          <a href="tel:+19174888096" class="contact-value">917-488-8096</a>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-label">✉️ Email</span>
+          <!-- Email obfuscated: rendered by JS, not in plain HTML -->
+          <span class="contact-value" id="email-display">
+            <noscript>Enable JavaScript to view email address.</noscript>
+          </span>
+        </div>
+
+        <p class="contact-note">No contact forms — just a direct conversation with someone who can actually help.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Summit Sales Leadership. All rights reserved.</p>
+  </footer>
+
+  <!-- Email obfuscation: splits address into parts, assembled at runtime -->
+  <script>
+    (function() {
+      var u = 'steve';
+      var d = 'ssl-usa.com';
+      var el = document.getElementById('email-display');
+      if (el) {
+        var a = document.createElement('a');
+        a.href = 'mailto:' + u + '@' + d;
+        a.textContent = u + '@' + d;
+        el.appendChild(a);
+      }
+    })();
+  </script>
+
+</body>
+</html>
