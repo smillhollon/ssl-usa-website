@@ -50,7 +50,6 @@ nav {
 .nav-logo img {
   height: 44px;
   width: auto;
-  filter: brightness(0) invert(1);
 }
 
 nav ul {
@@ -91,8 +90,8 @@ nav ul a.active {
 .hero-logo {
   width: 180px;
   height: auto;
-  filter: brightness(0) invert(1);
   margin-bottom: 40px;
+  border-radius: 8px;
 }
 
 .hero h1 {
